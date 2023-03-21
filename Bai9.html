@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr1 = [1, 'a', 3, 'g', 5, 3, 2, 5, 'm', '&', '#']
+  let a = prompt('Nhập ký tự bất kỳ')
+
+  function check(arr) {
+
+    for (let i = 0; i < arr.length; i++) {
+      if (a == arr[i]) {
+        return true
+      }
+    }
+  }
+  if (check(arr1)) {
+    alert(`Ký tự ${a} có nằm trong mảng`)
+  } else {
+    alert(`Ký tự ${a} không nằm trong mảng`)
+  }
+
+</script>
+</body>
+</html>

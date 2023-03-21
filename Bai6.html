@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = prompt('Nhập số vào đây để kiểm tra')
+
+  function check(a) {
+    if (a % 1 === 0 && a > 0){
+      return true
+    }else{
+      return false
+    }
+  }
+
+  if(check(num)){
+    alert("Nguyên dương")
+  }else{
+    alert('Không phải nguyên dương')
+  }
+</script>
+</body>
+</html>

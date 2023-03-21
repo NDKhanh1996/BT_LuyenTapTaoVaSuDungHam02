@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num1 = +prompt('Nhập số thứ 1')
+  let num2 = +prompt('Nhập số thứ 2')
+  let num3 = +prompt('Nhập số thứ 3')
+
+
+  function check(a, b, c) {
+    let max = a
+    if (b > max){
+      if (c > b){
+        max = c
+      }else{
+        max = b
+      }
+    }else{
+      if (c > max){
+        max = c
+      }
+    }
+    return max
+  }
+
+  document.write(check(num1, num2, num3))
+</script>
+</body>
+</html>
